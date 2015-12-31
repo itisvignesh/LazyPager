@@ -13,6 +13,7 @@
 		1B8097F51C2BF4EE00F742A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8097F31C2BF4EE00F742A0 /* Main.storyboard */; };
 		1B8097F71C2BF4EE00F742A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8097F61C2BF4EE00F742A0 /* Assets.xcassets */; };
 		1B8097FA1C2BF4EE00F742A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8097F81C2BF4EE00F742A0 /* LaunchScreen.storyboard */; };
+		1B8098031C2BF52E00F742A0 /* LazyPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8098021C2BF52E00F742A0 /* LazyPager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1B8097F61C2BF4EE00F742A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8097F91C2BF4EE00F742A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8097FB1C2BF4EE00F742A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8098011C2BF52E00F742A0 /* LazyPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyPager.h; sourceTree = "<group>"; };
+		1B8098021C2BF52E00F742A0 /* LazyPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyPager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				1B8097F81C2BF4EE00F742A0 /* LaunchScreen.storyboard */,
 				1B8097FB1C2BF4EE00F742A0 /* Info.plist */,
 				1B8097EA1C2BF4EE00F742A0 /* Supporting Files */,
+				1B8098011C2BF52E00F742A0 /* LazyPager.h */,
+				1B8098021C2BF52E00F742A0 /* LazyPager.m */,
 			);
 			path = ReImagePager;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B8097F21C2BF4EE00F742A0 /* ViewController.m in Sources */,
+				1B8098031C2BF52E00F742A0 /* LazyPager.m in Sources */,
 				1B8097EF1C2BF4EE00F742A0 /* AppDelegate.m in Sources */,
 				1B8097EC1C2BF4EE00F742A0 /* main.m in Sources */,
 			);
@@ -263,7 +269,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = ReImagePager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = contus.ReImagePager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +282,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = ReImagePager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = contus.ReImagePager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +310,7 @@
 				1B8098001C2BF4EE00F742A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

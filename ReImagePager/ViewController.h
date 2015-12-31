@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LazyPager.h"
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet LazyPager *iamgePager;
 
 
 @end
